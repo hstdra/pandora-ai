@@ -1,3 +1,6 @@
+# Link to page
+[Mouth train data](https://hstdra.github.io/pandora-ai/mouth-train-data)
+
 # Introduction
 Click start button to generate data.
 You can talking or not talking, after that the data will be automatically capture.
@@ -7,8 +10,8 @@ At the end you can save the data by click save button.
 # Best practices:
 ## You should use one emotion at on time for all the data.
 ## Divide train data by do the test in multiple times and save JSON file like:
-### BinhThuong_NORMAL.json
-### MiengMoNhungKhongNoi_NORMAL.json
-### Ho_NORMAL.json
-### NoiTo_TALKING.json
-### NoiNho_TALKING.json
+- BinhThuong_NORMAL.json
+- MiengMoNhungKhongNoi_NORMAL.json
+- Ho_NORMAL.json
+- NoiTo_TALKING.json
+- NoiNho_TALKING.json
