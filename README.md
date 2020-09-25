@@ -1,9 +1,14 @@
-# IMPORTANT: Bug Fixes
+# Introduction
+Click start button to generate data.
+You can talking or not talking, after that the data will be automatically capture.
+You can monitor last status (NORMAL/TALKING) and total number by category of generated data.
+At the end you can save the data by click save button.
 
-## `navigator.getUserMedia`
-
-`navigator.getUserMedia` is now deprecated and is replaced by `navigator.mediaDevices.getUserMedia`. To fix this bug replace all versions of `navigator.getUserMedia` with `navigator.mediaDevices.getUserMedia`
-
-## Low-end Devices Bug
-
-The video eventListener for `play` fires up too early on low-end machines, before the video is fully loaded, which causes errors to pop up from the Face API and terminates the script (tested on Debian [Firefox] and Windows [Chrome, Firefox]). Replaced by `playing` event, which fires up when the media has enough data to start playing.
+# Best practices:
+## You should use one emotion at on time for all the data.
+## Divide train data by do the test in multiple times and save JSON file like:
+### BinhThuong_NORMAL.json
+### MiengMoNhungKhongNoi_NORMAL.json
+### Ho_NORMAL.json
+### NoiTo_TALKING.json
+### NoiNho_TALKING.json
